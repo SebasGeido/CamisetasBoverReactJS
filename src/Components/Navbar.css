@@ -1,0 +1,14 @@
+p {
+    margin: 0;
+    width: fit-content;
+}
+.container-fluid {
+    flex-wrap: nowrap;
+}
+.navbar {
+    width: 100%;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
