@@ -1,0 +1,28 @@
+.catalogo {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.containerArticulo {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 5px 10px 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+.containerArticulo:p{
+    font-size: 0.9rem;
+    justify-content: center;
+}
+.tarjeta {
+    width: fit-content;
+}
+.IMGcamiseta {
+    width: 175px;
+    max-width: 100%;
+}
+.IMGcamiseta:hover {
+    width: 173.5px;
+}

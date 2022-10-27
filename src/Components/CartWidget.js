@@ -1,4 +1,4 @@
-import logo from '../bover.png';
+import logo from '../assets/bover.png';
 
 function CartWidget() {
     return(
