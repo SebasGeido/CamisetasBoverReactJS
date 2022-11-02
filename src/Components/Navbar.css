@@ -2,6 +2,9 @@ p {
     margin: 0;
     width: fit-content;
 }
+.link {
+    text-decoration: none;
+}
 .container-fluid {
     flex-wrap: nowrap;
 }

@@ -1,5 +1,11 @@
 import './Navbar.css'
 import CartWidget from './CartWidget.js'
+import {Link} from 'react-router-dom';
+import botones from '../APIrest/botones';
+const linkStyle = {
+  margin: "1rem",
+  textDecoration: "none",
+};
 function Navbar() {
     return (
         <nav className='navbar navbar-expand-lg bg-light'>
@@ -11,14 +17,18 @@ function Navbar() {
             <div className='collapse navbar-collapse' id="navbarNav">
               <ul className='navbar-nav'>
                 <li className='nav-item'>
-                  <a className='nav-link active' aria-current="page" href="../">Home</a>
+                  <Link to={`/`} style={linkStyle}>
+                    <span>Home</span>
+                  </Link>
                 </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href="#">Boca</a>
+                {botones
+                .map((boton,i) => (
+                <li llave={i} className='nav-item'>
+                <Link to={`/club/${boton.club}`} style={linkStyle}>
+                  {boton.club}
+                </Link>
                 </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href="#">River</a>
-                </li>
+                ))}
               </ul>
             </div>
           </div>

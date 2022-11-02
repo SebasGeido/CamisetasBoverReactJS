@@ -10,7 +10,7 @@ function App() {
       </div>
       <ItemListContainer/>
     </div>
-    )
+    ) 
 }
 
 export default App;
