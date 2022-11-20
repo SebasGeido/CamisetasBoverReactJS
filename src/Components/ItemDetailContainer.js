@@ -11,6 +11,7 @@ function ItemDetailContainer () {
                 <div className="containerArticulo">
                     <img className="IMGcamiseta" alt={`Camiseta: ${camisetas[id].Nombre}`} src={camisetas[id].link}></img>
               {camisetas[id].Nombre} <br/> ${camisetas[id].Precio} <br/> {camisetas[id].descripcion}
+              <button onClick={camisetas[id].carrito = camisetas[id].carrito + 0.5 }>Añadir al carrito</button>
                 </div>
             </div>
             </div>

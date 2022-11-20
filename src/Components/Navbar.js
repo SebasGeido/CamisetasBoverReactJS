@@ -29,6 +29,9 @@ function Navbar() {
                 </Link>
                 </li>
                 ))}
+                <li>
+                  <Link to={`/carrito/`}>🛒Carrito</Link>
+                </li>
               </ul>
             </div>
           </div>
